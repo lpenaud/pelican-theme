@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+  display: grid;
+  /* Taille colonnes */
+  grid-template-columns: 0.2fr 1fr;
+  /* Taille lignes */
+  grid-template-rows: 1fr;
+  /* Définition de la grille */
+  grid-template-areas: 
+    "head head"
+    "nav main"
+    "nav foot";
+}
+
+body > header {
+  background-color: lime;
+  grid-area: head;
+}
+
+body  > nav {
+  background-color: navy;
+  grid-area: nav;
+}
+
+body > main {
+  background-color: yellow;
+  grid-area: main;
+}
+
+body > footer {
+  background-color: red;
+  grid-column: foot;
+}
+
